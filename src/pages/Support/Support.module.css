@@ -1,0 +1,11 @@
+.supportForm {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.supportForm input,
+.supportForm textarea,
+.supportForm button {
+  margin-bottom: 10px;
+}

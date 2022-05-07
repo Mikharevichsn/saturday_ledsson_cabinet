@@ -1,12 +1,12 @@
-import React from 'react';
-import cn from 'classnames';
-import { NavLink } from 'react-router-dom';
-import s from './Menu.module.css';
+import React from "react";
+import cn from "classnames";
+import { NavLink } from "react-router-dom";
+import s from "./Menu.module.css";
 // import './Menu.css';
 
 export const Menu = ({ links = [] }) => {
   return (
-    <nav>
+    <nav className={s.menu}>
       <ul>
         {links.map((link) => (
           <li key={link.title}>

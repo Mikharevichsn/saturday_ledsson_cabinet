@@ -1,22 +1,26 @@
 export const mainMenuItems = [
   {
-    title: 'Главная',
-    href: '/',
+    title: "Главная",
+    href: "/",
   },
   {
-    title: 'Профиль',
-    href: '/profile',
+    title: "Профиль",
+    href: "/profile",
   },
   {
-    title: 'Доступные тарифы',
-    href: '/tariffs',
+    title: "Доступные тарифы",
+    href: "/tariffs",
   },
   {
-    title: 'Обратная связь',
-    href: '/support',
+    title: "Обратная связь",
+    href: "/support",
   },
   {
-    title: 'Новости',
-    href: '/news',
+    title: "Обращения в тех поддержку",
+    href: "/tickets",
+  },
+  {
+    title: "Новости",
+    href: "/news",
   },
 ];
