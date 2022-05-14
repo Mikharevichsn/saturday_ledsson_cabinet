@@ -10,8 +10,12 @@ import { NewsDetail } from "pages/NewsDetail";
 import { Tickets } from "pages/Tickets";
 import { ReactComponent as Logo } from "icons/logo.svg";
 import "./styles.css";
+import { Counter } from "compnents/Counter";
+import { useSelector } from "react-redux";
 
 function App() {
+  const balance = useSelector((store) => store.balance.value);
+
   return (
     <div className="App">
       <header className="active">
@@ -19,6 +23,7 @@ function App() {
           <a href="#">
             <Logo />
           </a>
+          Ваш баланс: {balance}
         </div>
       </header>
       <aside>
@@ -51,7 +56,10 @@ function App() {
         </div>
       </main>
       <footer>
-        <div className="container">i'm footer</div>
+        <div className="container">
+          i'm footer
+          <Counter />
+        </div>
       </footer>
     </div>
   );

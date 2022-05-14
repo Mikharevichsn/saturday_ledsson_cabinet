@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { add } from "redux/actions/ticketActions";
 import s from "./Support.module.css";
 
 const initialForm = {
@@ -7,11 +9,12 @@ const initialForm = {
 };
 
 export const Support = () => {
+  const dispatch = useDispatch();
   const [form, setForm] = useState(initialForm);
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    console.log("🚀 ~ file: Support.jsx ~ line 6 ~ Support ~ form", form);
+    dispatch(add(form));
     setForm(initialForm);
   };
 
